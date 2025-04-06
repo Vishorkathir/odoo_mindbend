@@ -1,0 +1,57 @@
+/* Make the entire container take full screen */
+.model-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Fullscreen camera video as background */
+  .fullscreen-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Button bar at the top */
+  .top-bar {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .top-bar button {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #7c3aed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .top-bar button:hover {
+    background: #5b21b6;
+  }
+  
+  /* Canvas with AR model */
+  .canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Makes canvas not block video/buttons unless needed */
+    
+  }
+  

@@ -1,0 +1,40 @@
+.option-label {
+  display: block;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option-label.selected {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+}
+
+.option-label.correct-answer {
+  border-color: green;
+  background-color: #eaffea;
+}
+
+.result-indicator.correct {
+  color: green;
+  margin-left: 10px;
+}
+
+.result-indicator.incorrect {
+  color: red;
+  margin-left: 10px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.score {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
